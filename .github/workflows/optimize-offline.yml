@@ -1,0 +1,55 @@
+name: Debloat Windows 10 automatically via GitHub Actions
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+  workflow_dispatch:  # allows the workflow to be triggered manually
+
+jobs:
+  optimize-offline:
+    runs-on: windows-latest
+    steps:
+    - name: Uninstall everything on github windows image
+      run: choco list --local-only --limit-output --idonly | Select-String -Pattern "^((?!git|7zip|chocolatey|KB).)*$" | ForEach-Object { choco uninstall -y $_ }
+    - name: Checkout code
+      run: |
+        mkdir C:/optimize-offline-ltsc-2022
+        git clone https://github.com/SoftwareRat/optimize-offline-ltsc-2022.git C:/optimize-offline-ltsc-2022 --depth 1
+    - name: Download ISO
+      shell: powershell
+      working-directory: C:/optimize-offline-ltsc-2022
+      run: |
+        $isoPath = "C:/optimize-offline-ltsc-2022/en-us_windows_10_iot_enterprise_ltsc_2021_x64_dvd_257ad90f.iso"
+        $expectedSha1 = "76c3c10e38307d29fd8b4748522ed144dba35829"
+        while ($true) {
+          if (Test-Path $isoPath) {
+            $actualSha1 = $(Get-FileHash $isoPath -Algorithm SHA1).Hash.ToLower()
+            if ($actualSha1 -eq $expectedSha1) {
+              Write-Host "ISO file already exists in working directory and has correct SHA1 hash."
+              break
+            } else {
+              Write-Host "Deleting ISO file because its SHA1 hash doesn't match the expected value."
+              Remove-Item $isoPath
+            }
+          }
+          $url = "https://isofiles.bd581e55.workers.dev/Windows%2010/Windows%2010%20Enterprise%20LTSC%202021/en-us_windows_10_iot_enterprise_ltsc_2021_x64_dvd_257ad90f.iso"
+          $outputPath = "en-us_windows_10_iot_enterprise_ltsc_2021_x64_dvd_257ad90f.iso"
+          Write-Host "Downloading ISO file from $url to $outputPath ..."
+          & "C:/optimize-offline-ltsc-2022/tools/amd64/wget.exe" $url --output-document=$outputPath
+        }
+    - name: Run Optimize-Offline
+      shell: powershell
+      working-directory: C:/optimize-offline-ltsc-2022
+      run: |
+        .\Start-Optimize.ps1
+    - name: Copy ISO to workspace
+      run: Copy-Item -Path "C:\optimize-offline-ltsc-2022\Windows10_LTSC_x64_en-US.iso" -Destination $env:GITHUB_WORKSPACE
+    - name: Upload ISO
+      uses: actions/upload-artifact@v2
+      with:
+        name: Windows10_LTSC_x64_en-US.iso
+        path: Windows10_LTSC_x64_en-US.iso
