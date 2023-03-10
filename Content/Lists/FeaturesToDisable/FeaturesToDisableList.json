@@ -1,0 +1,18 @@
+﻿{
+    "FeatureName":  [
+                        "MicrosoftWindowsPowerShellV2",
+                        "MicrosoftWindowsPowerShellV2Root",
+                        "MSRDC-Infrastructure",
+                        "Printing-Foundation-Features",
+                        "Printing-Foundation-InternetPrinting-Client",
+                        "Printing-PrintToPDFServices-Features",
+                        "Printing-XPSServices-Features",
+                        "SearchEngine-Client-Package",
+                        "SmbDirect",
+                        "WCF-Services45",
+                        "WCF-TCP-PortSharing45",
+                        "Windows-Defender-Default-Definitions",
+                        "WindowsMediaPlayer",
+                        "WorkFolders-Client"
+                    ]
+}

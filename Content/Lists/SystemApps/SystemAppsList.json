@@ -1,0 +1,19 @@
+﻿{
+    "DisplayName":  [
+                        "Microsoft.AAD.BrokerPlugin",
+                        "Microsoft.AccountsControl",
+                        "Microsoft.CredDialogHost",
+                        "Microsoft.LockApp",
+                        "Microsoft.Win32WebViewHost",
+                        "Microsoft.Windows.CapturePicker",
+                        "Microsoft.Windows.CloudExperienceHost",
+                        "Microsoft.Windows.ContentDeliveryManager",
+                        "Microsoft.Windows.OOBENetworkCaptivePortal",
+                        "Microsoft.Windows.OOBENetworkConnectionFlow",
+                        "Microsoft.Windows.Search",
+                        "Microsoft.Windows.ShellExperienceHost",
+                        "Microsoft.Windows.StartMenuExperienceHost",
+                        "MicrosoftWindows.Client.CBS",
+                        "windows.immersivecontrolpanel"
+                    ]
+}

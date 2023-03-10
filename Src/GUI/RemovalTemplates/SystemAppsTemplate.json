@@ -1,0 +1,154 @@
+﻿[
+    {
+        "DisplayName":  "Microsoft.AAD.BrokerPlugin",
+        "Selected":  false
+    },
+    {
+        "DisplayName":  "Microsoft.AccountsControl",
+        "Selected":  false
+    },
+    {
+        "DisplayName":  "Microsoft.AsyncTextService",
+        "Selected":  false
+    },
+    {
+        "DisplayName":  "Microsoft.BioEnrollment",
+        "Selected":  false
+    },
+    {
+        "DisplayName":  "Microsoft.CredDialogHost",
+        "Selected":  false
+    },
+    {
+        "DisplayName":  "Microsoft.ECApp",
+        "Selected":  false
+    },
+    {
+        "DisplayName":  "Microsoft.LockApp",
+        "Selected":  false
+    },
+    {
+        "DisplayName":  "Microsoft.MicrosoftEdge",
+        "Selected":  false
+    },
+    {
+        "DisplayName":  "Microsoft.MicrosoftEdgeDevToolsClient",
+        "Selected":  false
+    },
+    {
+        "DisplayName":  "Microsoft.Win32WebViewHost",
+        "Selected":  false
+    },
+    {
+        "DisplayName":  "Microsoft.Windows.AddSuggestedFoldersToLibarayDialog",
+        "Selected":  false
+    },
+    {
+        "DisplayName":  "Microsoft.Windows.AppRep.ChxApp",
+        "Selected":  false
+    },
+    {
+        "DisplayName":  "Microsoft.Windows.AppResolverUX",
+        "Selected":  false
+    },
+    {
+        "DisplayName":  "Microsoft.Windows.AssignedAccessLockApp",
+        "Selected":  false
+    },
+    {
+        "DisplayName":  "Microsoft.Windows.CallingShellApp",
+        "Selected":  false
+    },
+    {
+        "DisplayName":  "Microsoft.Windows.CapturePicker",
+        "Selected":  false
+    },
+    {
+        "DisplayName":  "Microsoft.Windows.CloudExperienceHost",
+        "Selected":  false
+    },
+    {
+        "DisplayName":  "Microsoft.Windows.ContentDeliveryManager",
+        "Selected":  false
+    },
+    {
+        "DisplayName":  "Microsoft.Windows.FileExplorer",
+        "Selected":  false
+    },
+    {
+        "DisplayName":  "Microsoft.Windows.FilePicker",
+        "Selected":  false
+    },
+    {
+        "DisplayName":  "Microsoft.Windows.NarratorQuickStart",
+        "Selected":  false
+    },
+    {
+        "DisplayName":  "Microsoft.Windows.OOBENetworkCaptivePortal",
+        "Selected":  false
+    },
+    {
+        "DisplayName":  "Microsoft.Windows.OOBENetworkConnectionFlow",
+        "Selected":  false
+    },
+    {
+        "DisplayName":  "Microsoft.Windows.ParentalControls",
+        "Selected":  false
+    },
+    {
+        "DisplayName":  "Microsoft.Windows.PeopleExperienceHost",
+        "Selected":  false
+    },
+    {
+        "DisplayName":  "Microsoft.Windows.PinningConfirmationDialog",
+        "Selected":  false
+    },
+    {
+        "DisplayName":  "Microsoft.Windows.Search",
+        "Selected":  false
+    },
+    {
+        "DisplayName":  "Microsoft.Windows.SecHealthUI",
+        "Selected":  false
+    },
+    {
+        "DisplayName":  "Microsoft.Windows.ShellExperienceHost",
+        "Selected":  false
+    },
+    {
+        "DisplayName":  "Microsoft.Windows.StartMenuExperienceHost",
+        "Selected":  false
+    },
+    {
+        "DisplayName":  "Microsoft.Windows.XGpuEjectDialog",
+        "Selected":  false
+    },
+    {
+        "DisplayName":  "Microsoft.XboxGameCallableUI",
+        "Selected":  false
+    },
+    {
+        "DisplayName":  "MicrosoftWindows.Client.CBS",
+        "Selected":  false
+    },
+    {
+        "DisplayName":  "MicrosoftWindows.UndockedDevKit",
+        "Selected":  false
+    },
+    {
+        "DisplayName":  "NcsiUwpApp",
+        "Selected":  false
+    },
+    {
+        "DisplayName":  "Windows.CBSPreview",
+        "Selected":  false
+    },
+    {
+        "DisplayName":  "windows.immersivecontrolpanel",
+        "Selected":  false
+    },
+    {
+        "DisplayName":  "Windows.PrintDialog",
+        "Selected":  false
+    }
+]

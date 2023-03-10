@@ -1,0 +1,22 @@
+﻿{
+    "Path":  "C:\\Users\\localadmin\\Downloads\\Optimize-Offline-OO-gdeliana-7.2\\OfflineTemp_1092390061\\ImageOffline\\install.wim",
+    "Index":  2,
+    "Name":  "Windows 10 IoT Enterprise LTSC",
+    "Description":  "Windows 10 IoT Enterprise LTSC",
+    "Size":  "12.63 GB",
+    "Edition":  "IoTEnterpriseS",
+    "VersionTable":  {
+                         "Major":  10,
+                         "Minor":  0,
+                         "Build":  19041,
+                         "SPBuild":  1288
+                     },
+    "Version":  "10.0.19041.1288",
+    "Build":  19041,
+    "Release":  null,
+    "CodeName":  null,
+    "Architecture":  "amd64",
+    "Language":  "en-US",
+    "InstallationType":  "Client",
+    "Created":  "\/Date(1633529170876)\/"
+}

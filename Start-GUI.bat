@@ -1,0 +1,1 @@
+powershell -ExecutionPolicy Bypass -WindowStyle Hidden -File "%~dp0Src\GUI\Start.ps1"

@@ -1,0 +1,8 @@
+{
+	"__Info": [
+		"Insert the services display names as a list, the names are found in the ./ServicesTemplate.json in the 'name' key"
+	],
+	"Services": [
+
+	]
+}
