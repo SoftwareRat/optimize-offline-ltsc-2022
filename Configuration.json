@@ -24,7 +24,7 @@
     "Win32Calc": true,
     "DormantDefender": false,
     "Dedup": false,
-    "DaRT": [Setup],
+    "DaRT": "Setup",
     "Registry": true,
     "OutputPath": "C:\\optimize-offline-ltsc-2022\\Windows10_LTSC_x64_en-US.iso",
     "Additional": {
